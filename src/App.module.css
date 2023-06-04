@@ -1,0 +1,64 @@
+.console_window_wrapper {
+    height: 600px;
+    width: 1200px;
+    border: 2px solid rgb(202, 202, 202);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.console_window_header {
+    padding: 1rem;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid rgb(202, 202, 202);
+    color: white;
+    background-color: transparent;
+}
+
+button:hover {
+    background-color: #565656;
+}
+
+.console_content_wrapper {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.console_content_type {
+    border-right: 1px solid rgb(202, 202, 202);
+    display: flex;
+    flex-direction: column;
+}
+
+.console_content_section {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.individual_log_content {
+    border-bottom: 1px solid rgb(219, 219, 219);
+    text-align: left;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 16px;
+    padding-top: 0.5rem;
+}
